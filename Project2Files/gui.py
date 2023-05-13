@@ -33,6 +33,7 @@ class GUI:
                 test_num = int(test_num)
                 if test_num < 0 or test_num > 10:
                     raise TypeError
+                self.label_check.config(text='acceptable input')
         except TypeError:
             self.label_check.config(text='Values must be between 1-9')
         except ValueError:
